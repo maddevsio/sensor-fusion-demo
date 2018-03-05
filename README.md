@@ -7,32 +7,22 @@
 This application demonstrates the capabilities of various sensors and sensor-fusions. Data from the Gyroscope, Accelerometer and compass are combined in different ways and the result is shown as a cube that can be rotated by rotating the device.
 
 
-Read the full documentation [here](http://sensor-fusion-demo.readthedocs.io).
-
-The major novelty in this application is the fusion of virtual sensors: **Improved Orientation Sensor 1** and **Improved Orientation Sensor 2** fuse the Android Rotation Vector with the virtual Gyroscope sensor to achieve a pose estimation with a previously unknown stability and precision.
-
-Apart from these two sensors, the following sensors are available for comparison:
+Read the full documentation [here](http://sensor-fusion-demo.readthedocs.io) and [here](https://github.com/maddevsio/mad-location-manager/wiki/Theory)
+The following sensors are available for comparison:
 
 - Improved Orientation Sensor 1 (Sensor fusion of Android Rotation Vector and Calibrated Gyroscope - less stable but more accurate)
 - Improved Orientation Sensor 2 (Sensor fusion of Android Rotation Vector and Calibrated Gyroscope - more stable but less accurate)
 - Android Rotation Vector (Kalman filter fusion of Accelerometer + Gyroscope + Compass)
-- Calibrated Gyroscope (Separate result of Kalman filter fusion of Accelerometer + Gyroscope + Compass)
+- Madgwick AHRS
 - Gravity + Compass
 - Accelerometer + Compass
+- Calibrated Gyroscope (Separate result of Kalman filter fusion of Accelerometer + Gyroscope + Compass)
 
-This application was developed for demonstrating the sensor fusion approach developed for my [Master Thesis "Sensor fusion for robust outdoor Augmented Reality tracking on mobile devices"](https://alexanderpacha.files.wordpress.com/2017/05/masterthesis-pacha.pdf) at the [Human Interface Technology Laboratory New Zealand](http://www.hitlabnz.org).
+This application was developed for demonstrating the sensor fusion approach developed for [Master Thesis "Sensor fusion for robust outdoor Augmented Reality tracking on mobile devices"](https://alexanderpacha.files.wordpress.com/2017/05/masterthesis-pacha.pdf) at the [Human Interface Technology Laboratory New Zealand](http://www.hitlabnz.org). Was modified by maddevs.io for MadgwickAHRS demonstration.
 
 ## Build and Install
 
 This project is an Gradle-based Android Studio project. It is also published in the [Google Play Store](https://play.google.com/store/apps/details?id=org.hitlabnz.sensor_fusion_demo), if you just want to try it out. 
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
 
 ## License
 
